@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageview_profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/profile2" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Samuel Andrey Aji Prasetya"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="A11.2021.13716" />
+
+    <ImageView
+        android:id="@+id/imageview_pic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/desc"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/profileui" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_pic"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_idea" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Hobby"
+            android:textColor="#000"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/des1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout_1"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="5dp"
+        android:text="Musik &amp; Programming" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/des1"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_book" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Deskripsi Singkat"
+            android:textColor="#000"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/des2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout_2"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="5dp"
+        android:text="Perkenalkan nama saya Samuel, prodi S1 Teknik Informatika di Udinus dan saat ini saya sedang belajar pemrograman mobile. "
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnMaps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/des2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="bukamaps"
+        android:text="Maps"
+        android:theme="@style/Theme.Material3.DynamicColors.Light" />
+
+    <Button
+        android:id="@+id/btnContact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnMaps"
+        android:theme="@style/Theme.Material3.DynamicColors.Light"
+        android:layout_margin="10dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:text="Contact"/>
+
+    <Button
+        android:id="@+id/btn_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="bukaemail"
+        android:theme="@style/Theme.Material3.DynamicColors.Light"
+        android:layout_below="@id/btnContact"
+        android:layout_margin="10dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:text="Email"/>
+
+
+</RelativeLayout>
